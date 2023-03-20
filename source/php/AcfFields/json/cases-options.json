@@ -1,0 +1,41 @@
+[{
+    "key": "group_6384c29dbf81f",
+    "title": "Plugin: My Cases",
+    "fields": [
+        {
+            "key": "field_6384c29dc30b0",
+            "label": "Cases API Uri",
+            "name": "cases_api_uri",
+            "type": "url",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "http:\/\/example\/api\/v1\/aboutme"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "my-pages-settings"
+            }
+        ]
+    ],
+    "menu_order": 100,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0
+}]
+

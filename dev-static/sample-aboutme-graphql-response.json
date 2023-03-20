@@ -1,0 +1,903 @@
+{
+  "data": {
+    "me": {
+      "id": "19710101",
+      "cases": [
+        {
+          "caseId": "case-2684",
+          "description": "Anmälan om ändrade förhållanden",
+          "label": "Anmälan om ändrade förhållanden",
+          "statusHint": "incomplete",
+          "subjectId": "19710101",
+          "updateTime": "2021-04-17",
+          "status": "incomplete",
+          "organization": "Miljöförvaltningen",
+          "events": [
+            {
+              "description": "Handläggarens notering 2020-11-22",
+              "status": "Closed",
+              "statusHint": "closed",
+              "updateTime": "2020-11-22",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2021-01-27",
+              "status": "Incomplete",
+              "statusHint": "incomplete",
+              "updateTime": "2021-01-27",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            },
+            {
+              "description": "Handläggarens notering 2021-02-20",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2021-02-20",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2021-03-27",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2021-03-27",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            },
+            {
+              "description": "Handläggarens notering 2021-04-14",
+              "status": "Closed",
+              "statusHint": "closed",
+              "updateTime": "2021-04-14",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            },
+            {
+              "description": "Handläggarens notering 2021-04-16",
+              "status": "",
+              "statusHint": null,
+              "updateTime": "2021-04-16",
+              "actions": []
+            }
+          ],
+          "actions": []
+        },
+        {
+          "caseId": "case-6796",
+          "description": "Ansökan om bygglov",
+          "label": "Ansökan om bygglov",
+          "statusHint": null,
+          "subjectId": "19710101",
+          "updateTime": "2021-06-05",
+          "status": "",
+          "events": [
+            {
+              "description": "Handläggarens notering 2020-11-24",
+              "status": "Incomplete",
+              "statusHint": "incomplete",
+              "updateTime": "2020-11-24",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2020-12-11",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2020-12-11",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2021-01-11",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2021-01-11",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2021-01-25",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2021-01-25",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            },
+            {
+              "description": "Handläggarens notering 2021-02-01",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2021-02-01",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2021-02-26",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2021-02-26",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            },
+            {
+              "description": "Handläggarens notering 2021-03-25",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2021-03-25",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            },
+            {
+              "description": "Handläggarens notering 2021-04-09",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2021-04-09",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            },
+            {
+              "description": "Handläggarens notering 2021-04-18",
+              "status": "Incomplete",
+              "statusHint": "incomplete",
+              "updateTime": "2021-04-18",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            },
+            {
+              "description": "Handläggarens notering 2021-05-17",
+              "status": "Rejected",
+              "statusHint": "rejected",
+              "updateTime": "2021-05-17",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2021-05-27",
+              "status": "",
+              "statusHint": null,
+              "updateTime": "2021-05-27",
+              "actions": []
+            }
+          ],
+          "actions": [
+            {
+              "label": "Visa i E-tjänsten (1)",
+              "url": "https://www.example.com",
+              "typeHint": "link"
+            }
+          ]
+        },
+        {
+          "caseId": "case-2992",
+          "description": "Ansökan om bygglov",
+          "label": "Ansökan om bygglov",
+          "statusHint": "approved",
+          "subjectId": "19710101",
+          "updateTime": "2021-10-06",
+          "status": "Approved",
+          "events": [
+            {
+              "description": "Handläggarens notering 2020-12-20",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2020-12-20",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2020-12-28",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2020-12-28",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2021-01-17",
+              "status": "Rejected",
+              "statusHint": "rejected",
+              "updateTime": "2021-01-17",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            },
+            {
+              "description": "Handläggarens notering 2021-04-20",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2021-04-20",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            },
+            {
+              "description": "Handläggarens notering 2021-04-21",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2021-04-21",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2021-06-16",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2021-06-16",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            },
+            {
+              "description": "Handläggarens notering 2021-07-07",
+              "status": "Rejected",
+              "statusHint": "rejected",
+              "updateTime": "2021-07-07",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2021-07-07",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2021-07-07",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2021-07-10",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2021-07-10",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2021-08-05",
+              "status": "Rejected",
+              "statusHint": "rejected",
+              "updateTime": "2021-08-05",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            },
+            {
+              "description": "Handläggarens notering 2021-09-05",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2021-09-05",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "label": "Visa i E-tjänsten (1)",
+              "url": "https://www.example.com",
+              "typeHint": "link"
+            }
+          ]
+        },
+        {
+          "caseId": "case-1938",
+          "description": "Ansökan om bygglov",
+          "label": "Ansökan om bygglov",
+          "statusHint": null,
+          "subjectId": "19710101",
+          "updateTime": "2021-12-30",
+          "status": "",
+          "events": [
+            {
+              "description": "Handläggarens notering 2020-12-26",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2020-12-26",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            },
+            {
+              "description": "Handläggarens notering 2020-12-31",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2020-12-31",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2021-01-17",
+              "status": "Closed",
+              "statusHint": "closed",
+              "updateTime": "2021-01-17",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2021-01-17",
+              "status": "",
+              "statusHint": null,
+              "updateTime": "2021-01-17",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            },
+            {
+              "description": "Handläggarens notering 2021-06-05",
+              "status": "Closed",
+              "statusHint": "closed",
+              "updateTime": "2021-06-05",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            },
+            {
+              "description": "Handläggarens notering 2021-07-07",
+              "status": "Closed",
+              "statusHint": "closed",
+              "updateTime": "2021-07-07",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            },
+            {
+              "description": "Handläggarens notering 2021-07-24",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2021-07-24",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            },
+            {
+              "description": "Handläggarens notering 2021-08-20",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2021-08-20",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2021-08-21",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2021-08-21",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2021-12-10",
+              "status": "",
+              "statusHint": null,
+              "updateTime": "2021-12-10",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "label": "Visa i E-tjänsten (1)",
+              "url": "https://www.example.com",
+              "typeHint": "link"
+            }
+          ]
+        },
+        {
+          "caseId": "case-1646",
+          "description": "Ansökan om bygglov",
+          "label": "Ansökan om bygglov",
+          "statusHint": "closed",
+          "subjectId": "19710101",
+          "updateTime": "2021-12-30",
+          "status": "Closed",
+          "events": [
+            {
+              "description": "Handläggarens notering 2021-01-10",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2021-01-10",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2021-01-27",
+              "status": "Closed",
+              "statusHint": "closed",
+              "updateTime": "2021-01-27",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            },
+            {
+              "description": "Handläggarens notering 2021-02-01",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2021-02-01",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            },
+            {
+              "description": "Handläggarens notering 2021-02-28",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2021-02-28",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            },
+            {
+              "description": "Handläggarens notering 2021-07-07",
+              "status": "Incomplete",
+              "statusHint": "incomplete",
+              "updateTime": "2021-07-07",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            },
+            {
+              "description": "Handläggarens notering 2021-07-23",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2021-07-23",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            },
+            {
+              "description": "Handläggarens notering 2021-07-26",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2021-07-26",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            },
+            {
+              "description": "Handläggarens notering 2021-08-23",
+              "status": "Closed",
+              "statusHint": "closed",
+              "updateTime": "2021-08-23",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            },
+            {
+              "description": "Handläggarens notering 2021-08-29",
+              "status": "Closed",
+              "statusHint": "closed",
+              "updateTime": "2021-08-29",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2021-10-22",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2021-10-22",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2021-12-28",
+              "status": "Closed",
+              "statusHint": "closed",
+              "updateTime": "2021-12-28",
+              "actions": []
+            }
+          ],
+          "actions": []
+        },
+        {
+          "caseId": "case-7949",
+          "description": "Ansökan om bygglov",
+          "label": "Ansökan om bygglov",
+          "statusHint": "approved",
+          "subjectId": "19710101",
+          "updateTime": "2022-06-01",
+          "status": "Approved",
+          "events": [
+            {
+              "description": "Handläggarens notering 2020-11-29",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2020-11-29",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2021-03-11",
+              "status": "Closed",
+              "statusHint": "closed",
+              "updateTime": "2021-03-11",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            },
+            {
+              "description": "Handläggarens notering 2021-06-23",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2021-06-23",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2021-07-28",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2021-07-28",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2022-02-17",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2022-02-17",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            }
+          ],
+          "actions": []
+        },
+        {
+          "caseId": "case-3298",
+          "description": "Ansökan om bygglov",
+          "label": "Ansökan om bygglov",
+          "statusHint": "approved",
+          "subjectId": "19710101",
+          "updateTime": "2022-07-07",
+          "status": "Approved",
+          "events": [
+            {
+              "description": "Handläggarens notering 2021-02-04",
+              "status": "Rejected",
+              "statusHint": "rejected",
+              "updateTime": "2021-02-04",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2021-03-04",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2021-03-04",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2021-04-19",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2021-04-19",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2021-06-16",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2021-06-16",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2021-09-20",
+              "status": "",
+              "statusHint": null,
+              "updateTime": "2021-09-20",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2021-10-08",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2021-10-08",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2022-02-28",
+              "status": "Closed",
+              "statusHint": "closed",
+              "updateTime": "2022-02-28",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            },
+            {
+              "description": "Handläggarens notering 2022-04-28",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2022-04-28",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2022-04-30",
+              "status": "Incomplete",
+              "statusHint": "incomplete",
+              "updateTime": "2022-04-30",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2022-05-06",
+              "status": "Closed",
+              "statusHint": "closed",
+              "updateTime": "2022-05-06",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            },
+            {
+              "description": "Handläggarens notering 2022-06-20",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2022-06-20",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            }
+          ],
+          "actions": []
+        },
+        {
+          "caseId": "case-9849",
+          "description": "Ansökan om bygglov",
+          "label": "Ansökan om bygglov",
+          "statusHint": "rejected",
+          "subjectId": "19710101",
+          "updateTime": "2022-09-10",
+          "status": "Rejected",
+          "events": [
+            {
+              "description": "Handläggarens notering 2021-10-08",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2021-10-08",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2022-01-13",
+              "status": "Closed",
+              "statusHint": "closed",
+              "updateTime": "2022-01-13",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            },
+            {
+              "description": "Handläggarens notering 2022-06-27",
+              "status": "Rejected",
+              "statusHint": "rejected",
+              "updateTime": "2022-06-27",
+              "actions": []
+            }
+          ],
+          "actions": [
+            {
+              "label": "Visa i E-tjänsten (1)",
+              "url": "https://www.example.com",
+              "typeHint": "link"
+            }
+          ]
+        },
+        {
+          "caseId": "case-2239",
+          "description": "Ansökan om bygglov",
+          "label": "Ansökan om bygglov",
+          "statusHint": "rejected",
+          "subjectId": "19710101",
+          "updateTime": "2022-11-01",
+          "status": "Rejected",
+          "events": [
+            {
+              "description": "Handläggarens notering 2021-01-01",
+              "status": "Closed",
+              "statusHint": "closed",
+              "updateTime": "2021-01-01",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            },
+            {
+              "description": "Handläggarens notering 2021-01-22",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2021-01-22",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2021-01-29",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2021-01-29",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            },
+            {
+              "description": "Handläggarens notering 2021-02-04",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2021-02-04",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2021-04-03",
+              "status": "Closed",
+              "statusHint": "closed",
+              "updateTime": "2021-04-03",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2021-12-31",
+              "status": "Incomplete",
+              "statusHint": "incomplete",
+              "updateTime": "2021-12-31",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            },
+            {
+              "description": "Handläggarens notering 2022-02-19",
+              "status": "Approved",
+              "statusHint": "approved",
+              "updateTime": "2022-02-19",
+              "actions": []
+            },
+            {
+              "description": "Handläggarens notering 2022-04-24",
+              "status": "Closed",
+              "statusHint": "closed",
+              "updateTime": "2022-04-24",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            },
+            {
+              "description": "Handläggarens notering 2022-07-09",
+              "status": "Rejected",
+              "statusHint": "rejected",
+              "updateTime": "2022-07-09",
+              "actions": [
+                {
+                  "label": "E-tjänst 0",
+                  "url": "https://www.example.com",
+                  "typeHint": "link"
+                }
+              ]
+            }
+          ],
+          "actions": []
+        }
+      ]
+    }
+  }
+}
