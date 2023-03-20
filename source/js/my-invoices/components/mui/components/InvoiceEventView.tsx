@@ -7,27 +7,27 @@ import {
   TimelineTitle,
   Button,
   TimelineSecondary,
-} from "@helsingborg-stad/municipio-react-ui";
+} from '@helsingborg-stad/municipio-react-ui'
 
-const CaseEventView = ({
+const InvoiceEventView = ({
   title,
   date,
   description = undefined,
   active = false,
   actions = [],
 }: {
-  title: string;
-  date: string;
-  description?: string;
-  active?: boolean;
+  title: string
+  date: string
+  description?: string
+  active?: boolean
   actions?: {
-    text: string;
-    url: string;
-  }[];
+    text: string
+    url: string
+  }[]
 }) => (
   <TimelineItem active={active} muted={!active}>
     <TimelineConnector />
-    <TimelineBody  style={{minWidth: '0'}}>
+    <TimelineBody style={{ minWidth: '0' }}>
       <TimelineHeader>
         <TimelineTitle as="h5" variant="p">
           {title}
@@ -47,8 +47,7 @@ const CaseEventView = ({
           href={url}
           variant="basic"
           target="_blank"
-          color="primary"
-        >
+          color="primary">
           {text}
         </Button>
       ))}
@@ -59,6 +58,6 @@ const CaseEventView = ({
       </Typography>
     </TimelineSecondary>
   </TimelineItem>
-);
+)
 
-export default CaseEventView;
+export default InvoiceEventView

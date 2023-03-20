@@ -2,13 +2,13 @@
 
 if (function_exists('acf_add_local_field_group')) {
     acf_add_local_field_group(array(
-    'key' => 'group_6384c29dbf81f',
-    'title' => __('Plugin: My Cases', 'gdi-modularity-invoices'),
+    'key' => 'group_641850aab2e31',
+    'title' => __('Plugin: My invoices', 'gdi-modularity-invoices'),
     'fields' => array(
         0 => array(
-            'key' => 'field_6384c29dc30b0',
-            'label' => __('Cases API Uri', 'gdi-modularity-invoices'),
-            'name' => 'cases_api_uri',
+            'key' => 'field_641850aab7b99',
+            'label' => __('Invoices API Uri', 'gdi-modularity-invoices'),
+            'name' => 'invoices_api_uri',
             'type' => 'url',
             'instructions' => '',
             'required' => 1,
@@ -40,5 +40,10 @@
     'active' => true,
     'description' => '',
     'show_in_rest' => 0,
+    'acfe_display_title' => '',
+    'acfe_autosync' => '',
+    'acfe_form' => 0,
+    'acfe_meta' => '',
+    'acfe_note' => '',
 ));
 }

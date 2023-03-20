@@ -37,8 +37,8 @@ add_action('acf/init', function () {
     $acfExportManager->setTextdomain(GDI_INVOICES_TEXT_DOMAIN);
     $acfExportManager->setExportFolder(GDI_INVOICES_PATH . 'source/php/AcfFields/');
     $acfExportManager->autoExport(array(
-        'cases-options' => 'group_6384c29dbf81f',
-        'module-my-invoices-mock-data' => 'group_6405f86fe7e4c',
+        'invoices-options' => 'group_641850aab2e31',
+        'module-my-invoices-mock-data' => 'group_64185083841af',
     ));
     $acfExportManager->import();
 });

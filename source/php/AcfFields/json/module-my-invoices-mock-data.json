@@ -1,11 +1,11 @@
 [{
-    "key": "group_6405f86fe7e4c",
-    "title": "My Cases: Mock Data",
+    "key": "group_64185083841af",
+    "title": "My Invoices: Mock Data",
     "fields": [
         {
-            "key": "field_6405f870fcf37",
-            "label": "Mock Cases",
-            "name": "mock_cases",
+            "key": "field_6418508389bcd",
+            "label": "Mock Invoices",
+            "name": "mock_invoices",
             "type": "true_false",
             "instructions": "",
             "required": 0,
@@ -22,7 +22,7 @@
             "ui": 1
         },
         {
-            "key": "field_6405f8e1fcf38",
+            "key": "field_6418508389bd5",
             "label": "JSON Mock Data",
             "name": "json_mock_data",
             "type": "textarea",
@@ -31,7 +31,7 @@
             "conditional_logic": [
                 [
                     {
-                        "field": "field_6405f870fcf37",
+                        "field": "field_6418508389bcd",
                         "operator": "==",
                         "value": "1"
                     }
@@ -43,6 +43,7 @@
                 "id": ""
             },
             "default_value": "",
+            "acfe_textarea_code": 0,
             "maxlength": "",
             "rows": "",
             "placeholder": "",
@@ -73,6 +74,11 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "show_in_rest": 0
+    "show_in_rest": 0,
+    "acfe_display_title": "",
+    "acfe_autosync": "",
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": ""
 }]
 

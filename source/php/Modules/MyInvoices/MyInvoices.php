@@ -12,14 +12,14 @@ class MyInvoices extends \Modularity\Module
 
     public function init()
     {
-        $this->nameSingular = __('My Cases', GDI_INVOICES_TEXT_DOMAIN);
-        $this->namePlural = __('My Cases', GDI_INVOICES_TEXT_DOMAIN);
+        $this->nameSingular = __('My Invoices', GDI_INVOICES_TEXT_DOMAIN);
+        $this->namePlural = __('My Invoices', GDI_INVOICES_TEXT_DOMAIN);
         $this->description = __('Modularity Module', GDI_INVOICES_TEXT_DOMAIN);
     }
 
     public function getMockJson(?callable $onError): string
     {
-        if (get_field('mock_cases', $this->ID)) {
+        if (get_field('mock_invoices', $this->ID)) {
             $mockJson = get_field('json_mock_data', $this->ID);
             try {
                 return base64_encode(
@@ -46,7 +46,7 @@ class MyInvoices extends \Modularity\Module
         };
 
         return [
-            'aboutMeGraphQLUri' => get_field('cases_api_uri', 'options') . '/graphql',
+            'aboutMeGraphQLUri' => get_field('invoices_api_uri', 'options') . '/graphql',
             'aboutMeGraphQLJson' => $this->getMockJson($jsonErrorHandler),
         ];
     }

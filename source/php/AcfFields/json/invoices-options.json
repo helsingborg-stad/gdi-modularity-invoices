@@ -1,11 +1,11 @@
 [{
-    "key": "group_6384c29dbf81f",
-    "title": "Plugin: My Cases",
+    "key": "group_641850aab2e31",
+    "title": "Plugin: My invoices",
     "fields": [
         {
-            "key": "field_6384c29dc30b0",
-            "label": "Cases API Uri",
-            "name": "cases_api_uri",
+            "key": "field_641850aab7b99",
+            "label": "Invoices API Uri",
+            "name": "invoices_api_uri",
             "type": "url",
             "instructions": "",
             "required": 1,
@@ -36,6 +36,11 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "show_in_rest": 0
+    "show_in_rest": 0,
+    "acfe_display_title": "",
+    "acfe_autosync": "",
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": ""
 }]
 

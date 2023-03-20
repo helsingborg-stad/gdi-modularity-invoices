@@ -2,13 +2,13 @@
 
 if (function_exists('acf_add_local_field_group')) {
     acf_add_local_field_group(array(
-    'key' => 'group_6405f86fe7e4c',
-    'title' => __('My Cases: Mock Data', 'gdi-modularity-invoices'),
+    'key' => 'group_64185083841af',
+    'title' => __('My Invoices: Mock Data', 'gdi-modularity-invoices'),
     'fields' => array(
         0 => array(
-            'key' => 'field_6405f870fcf37',
-            'label' => __('Mock Cases', 'gdi-modularity-invoices'),
-            'name' => 'mock_cases',
+            'key' => 'field_6418508389bcd',
+            'label' => __('Mock Invoices', 'gdi-modularity-invoices'),
+            'name' => 'mock_invoices',
             'type' => 'true_false',
             'instructions' => '',
             'required' => 0,
@@ -25,7 +25,7 @@
             'ui' => 1,
         ),
         1 => array(
-            'key' => 'field_6405f8e1fcf38',
+            'key' => 'field_6418508389bd5',
             'label' => __('JSON Mock Data', 'gdi-modularity-invoices'),
             'name' => 'json_mock_data',
             'type' => 'textarea',
@@ -110,7 +110,7 @@
             'conditional_logic' => array(
                 0 => array(
                     0 => array(
-                        'field' => 'field_6405f870fcf37',
+                        'field' => 'field_6418508389bcd',
                         'operator' => '==',
                         'value' => '1',
                     ),
@@ -122,6 +122,7 @@
                 'id' => '',
             ),
             'default_value' => '',
+            'acfe_textarea_code' => 0,
             'maxlength' => '',
             'rows' => '',
             'placeholder' => '',
@@ -153,5 +154,10 @@
     'active' => true,
     'description' => '',
     'show_in_rest' => 0,
+    'acfe_display_title' => '',
+    'acfe_autosync' => '',
+    'acfe_form' => 0,
+    'acfe_meta' => '',
+    'acfe_note' => '',
 ));
 }
