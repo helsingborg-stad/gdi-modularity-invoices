@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Case } from '../../../about-me-service/AboutMeContext'
 import { sortyBy } from '../../../util'
-import InvoicesTabView from './components/InvoicesTabView'
+import InvoicesListView from './components/InvoicesListView'
 
 const normalizeCases = (cases: Case[]): Case[] =>
   sortyBy(cases, (c) => c.updateTime, 'desc').map((c) => ({
@@ -11,7 +11,7 @@ const normalizeCases = (cases: Case[]): Case[] =>
 
 const InvoicesView = ({ cases }: { cases: Case[] }): JSX.Element => {
   const [normalizedCases] = useState(normalizeCases(cases))
-  return <InvoicesTabView cases={normalizedCases} />
+  return <InvoicesListView cases={normalizedCases} />
 }
 
 export default InvoicesView

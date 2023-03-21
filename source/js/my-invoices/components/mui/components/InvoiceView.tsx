@@ -2,7 +2,6 @@ import { Button, Typography } from '@helsingborg-stad/municipio-react-ui'
 import { Accordion, AccordionSummary, Stack, Chip, AccordionDetails } from '@mui/material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import { Case } from '../../../../about-me-service/AboutMeContext'
-import InvoiceEvents from './InvoiceEvents'
 import InvoiceDetails from './InvoiceDetails'
 
 const InvoiceView = ({
