@@ -31,8 +31,7 @@
             'type' => 'textarea',
             'instructions' => __('Example:
 
-[
-                {
+ [                 {
                     "caseId": "case-2684",
                     "description": "Anmälan om ändrade förhållanden",
                     "label": "Anmälan om ändrade förhållanden",
@@ -41,6 +40,11 @@
                     "updateTime": "2021-04-17",
                     "status": "incomplete",
                     "organization": "Miljöförvaltningen",
+                    "dueDate": "2021-05-17",
+                    "amount": "500",
+                    "invoiceDate": "2021-04-17",
+                    "ocrNumber": "123456789101112",
+                    "autoGiro": "1234-1234",
                     "events": [
                         {
                             "description": "Handläggarens notering 2020-11-22",
@@ -104,8 +108,7 @@
                         }
                     ],
                     "actions": []
-                }
-]', 'gdi-modularity-invoices'),
+                } ]', 'gdi-modularity-invoices'),
             'required' => 1,
             'conditional_logic' => array(
                 0 => array(
