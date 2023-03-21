@@ -1,14 +1,12 @@
 import { Button, Typography } from '@helsingborg-stad/municipio-react-ui'
 import { Accordion, AccordionSummary, Stack, Chip, AccordionDetails } from '@mui/material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
-import { Case } from '../../../../about-me-service/AboutMeContext'
+import { Invoice } from '../../../../about-me-service/AboutMeContext'
 import InvoiceDetails from './InvoiceDetails'
 
 const InvoiceView = ({
   data: {
-    events,
     label,
-    updateTime,
     status,
     statusHint,
     actions,
@@ -20,7 +18,7 @@ const InvoiceView = ({
     autoGiro,
   },
 }: {
-  data: Case
+  data: Invoice
 }): JSX.Element => (
   <Accordion>
     <AccordionSummary expandIcon={<ExpandMoreIcon />}>
@@ -70,7 +68,7 @@ const InvoiceView = ({
       <div>
         <InvoiceDetails {...{ dueDate, amount, invoiceDate, ocrNumber, autoGiro }} />
 
-        {actions?.length && events?.length && events?.length > 0 && actions?.length > 0 ? (
+        {actions?.length && actions?.length > 0 ? (
           <hr
             className="u-margin__y--4"
             style={{

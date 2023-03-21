@@ -1,11 +1,11 @@
-import { Case } from '../../../../about-me-service/AboutMeContext'
+import { Invoice } from '../../../../about-me-service/AboutMeContext'
 import InvoiceView from './InvoiceView'
 
-const InvoicesListView = ({ cases }: { cases: Case[] }) => {
+const InvoicesListView = ({ invoices }: { invoices: Invoice[] }) => {
   return (
     <div>
-      {cases.map((data) => (
-        <InvoiceView key={data.caseId} {...{ data }} />
+      {invoices.map((data) => (
+        <InvoiceView key={data.invoiceId} {...{ data }} />
       ))}
     </div>
   )

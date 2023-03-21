@@ -1,18 +1,13 @@
 import React from 'react'
 
-export interface Case {
-  caseId: string
-  subjectId: string
-  updateTime: string
+export interface Invoice {
+  invoiceId: string
   label?: string
   description?: string
   status?: string
   statusHint?: string
   organization?: string
-  events?: CaseEvent[]
-  actions?: CaseAction[]
-
-  invoiceId: string
+  actions?: InvoiceAction[]
   invoiceDate: string
   dueDate: string
   ocrNumber: string
@@ -23,23 +18,15 @@ export interface Case {
     date: string
   }[]
 }
-export interface CaseEvent {
-  updateTime: string
-  label?: string
-  description?: string
-  status?: string
-  statusHint?: string
-  actions?: CaseAction[]
-}
 
-export interface CaseAction {
+export interface InvoiceAction {
   label: string
   url: string
   typeHint?: string
 }
 
 export interface AboutMeContextType {
-  listCases: () => Promise<Case[]>
+  listInvoices: () => Promise<Invoice[]>
 }
 
 const notImplemented = () => {
@@ -47,7 +34,7 @@ const notImplemented = () => {
 }
 
 const AboutMeContext = React.createContext<AboutMeContextType>({
-  listCases: notImplemented,
+  listInvoices: notImplemented,
 })
 
 export default AboutMeContext

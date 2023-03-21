@@ -2,30 +2,19 @@
   "data": {
     "me": {
       "id": "19710101",
-      "cases": [
+      "invoices": [
         {
-          "caseId": "case-2684",
+          "invoiceId": "invoices-2684",
           "description": "Anmälan om ändrade förhållanden",
           "label": "Anmälan om ändrade förhållanden",
           "statusHint": "incomplete",
-          "subjectId": "19710101",
-          "updateTime": "2021-04-17",
           "status": "incomplete",
           "organization": "Miljöförvaltningen",
           "dueDate": "2021-05-17",
-          "amount": "50000",
           "invoiceDate": "2021-04-17",
+          "amount": "50000",
           "ocrNumber": "123456789101112",
           "autoGiro": "1234-1234",
-          "events": [
-            {
-              "description": "Handläggarens notering 2020-11-22",
-              "status": "Closed",
-              "statusHint": "closed",
-              "updateTime": "2020-11-22",
-              "actions": []
-            }
-          ],
           "actions": [
             {
               "label": "Gå till faktura",
