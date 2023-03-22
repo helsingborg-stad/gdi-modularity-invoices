@@ -1,22 +1,22 @@
-const dotenv = require('dotenv');
-const path = require('path');
-const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
-const WebpackNotifierPlugin = require('webpack-notifier');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const RemoveEmptyScripts = require('webpack-remove-empty-scripts');
-const CssMinimizerWebpackPlugin = require('css-minimizer-webpack-plugin');
-const autoprefixer = require('autoprefixer');
-const { getIfUtils, removeEmpty } = require('webpack-config-utils');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { ifProduction, ifDevelopment } = getIfUtils(process.env.NODE_ENV);
-dotenv.config();
+const dotenv = require('dotenv')
+const path = require('path')
+const { WebpackManifestPlugin } = require('webpack-manifest-plugin')
+const WebpackNotifierPlugin = require('webpack-notifier')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const RemoveEmptyScripts = require('webpack-remove-empty-scripts')
+const CssMinimizerWebpackPlugin = require('css-minimizer-webpack-plugin')
+const autoprefixer = require('autoprefixer')
+const { getIfUtils, removeEmpty } = require('webpack-config-utils')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { ifProduction, ifDevelopment } = getIfUtils(process.env.NODE_ENV)
+dotenv.config()
 
 module.exports = {
   devServer: {
     onAfterSetupMiddleware: function (devServer) {
       if (!devServer) {
-        throw new Error('webpack-dev-server is not defined');
+        throw new Error('webpack-dev-server is not defined')
       }
 
       /**
@@ -25,21 +25,21 @@ module.exports = {
        */
       devServer.app.get('/dev-static/:id', function (req, res) {
         res.sendFile(path.join(__dirname, './dev-static', req.params.id))
-      });
+      })
       devServer.app.post('/dev-static/:id', function (req, res) {
         res.sendFile(path.join(__dirname, './dev-static', req.params.id))
-      });
-    }
+      })
+    },
   },
 
   mode: ifProduction('production', 'development'),
-    /**
-     * Add your entry files here
-     */
-     entry: {
-        'js/gdi-modularity-invoices': './source/js/index.tsx',
-    },
-    
+  /**
+   * Add your entry files here
+   */
+  entry: {
+    'js/gdi-modularity-invoices': './source/js/index.tsx',
+    'css/gdi-modularity-invoices': './source/sass/gdi-modularity-invoices.scss',
+  },
 
   /**
    * Output settings
@@ -47,7 +47,7 @@ module.exports = {
   output: {
     filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: ''
+    publicPath: '',
   },
   /**
    * Define external dependencies here
@@ -129,16 +129,16 @@ module.exports = {
       map: function (file) {
         // Fix incorrect key for fonts
         if (file.isAsset && file.isModuleAsset && file.path.match(/\.(woff|woff2|eot|ttf|otf)$/)) {
-          const pathParts = file.path.split('.');
-          const nameParts = file.name.split('.');
+          const pathParts = file.path.split('.')
+          const nameParts = file.name.split('.')
 
           // Compare extensions
           if (pathParts[pathParts.length - 1] !== nameParts[nameParts.length - 1]) {
-            file.name = pathParts[0].concat('.', pathParts[pathParts.length - 1]);
+            file.name = pathParts[0].concat('.', pathParts[pathParts.length - 1])
           }
         }
 
-        return file;
+        return file
       },
     }),
 
@@ -168,10 +168,10 @@ module.exports = {
     ifDevelopment(
       new HtmlWebpackPlugin({
         template: './source/js/template.html.ejs',
-        env: process.env
-      })
+        env: process.env,
+      }),
     ),
   ]).filter(Boolean),
   devtool: 'source-map',
   stats: { children: false },
-};
+}
