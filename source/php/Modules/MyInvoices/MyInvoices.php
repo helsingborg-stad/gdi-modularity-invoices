@@ -65,7 +65,7 @@ class MyInvoices extends \Modularity\Module
         );
         wp_enqueue_style(
             'gdi-modularity-my-invoices-css',
-            GDI_INVOICES_URL . '/dist/' . CacheBust::name('js/gdi-modularity-invoices.css'),
+            GDI_INVOICES_URL . '/dist/' . CacheBust::name('css/gdi-modularity-invoices.css'),
             null
         );
     }
