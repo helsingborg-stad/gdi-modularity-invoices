@@ -31,84 +31,78 @@
             'type' => 'textarea',
             'instructions' => __('Example:
 
- [                 {
-                    "caseId": "case-2684",
-                    "description": "Anmälan om ändrade förhållanden",
-                    "label": "Anmälan om ändrade förhållanden",
-                    "statusHint": "incomplete",
-                    "subjectId": "19710101",
-                    "updateTime": "2021-04-17",
-                    "status": "incomplete",
-                    "organization": "Miljöförvaltningen",
-                    "dueDate": "2021-05-17",
-                    "amount": "500",
-                    "invoiceDate": "2021-04-17",
+[
+                {
+                    "invoiceId": "invoices-0001",
+                    "description": "Avgift för barnomsorg - Februari",
+                    "label": "Avgift för barnomsorg - Februari",
+                    "organization": "Skol - och fritidsförvaltningen",
+                    "invoiceDate": "2023-03-01",
+                    "dueDate": "2023-03-13",
+                    "amount": "55000",
                     "ocrNumber": "123456789101112",
                     "autoGiro": "1234-1234",
-                    "events": [
+                    "isPaid": true,
+                    "actions": [
                         {
-                            "description": "Handläggarens notering 2020-11-22",
-                            "status": "Closed",
-                            "statusHint": "closed",
-                            "updateTime": "2020-11-22",
-                            "actions": []
-                        },
-                        {
-                            "description": "Handläggarens notering 2021-01-27",
-                            "status": "Incomplete",
-                            "statusHint": "incomplete",
-                            "updateTime": "2021-01-27",
-                            "actions": [
-                                {
-                                    "label": "E-tjänst 0",
-                                    "url": "https://www.example.com",
-                                    "typeHint": "link"
-                                }
-                            ]
-                        },
-                        {
-                            "description": "Handläggarens notering 2021-02-20",
-                            "status": "Approved",
-                            "statusHint": "approved",
-                            "updateTime": "2021-02-20",
-                            "actions": []
-                        },
-                        {
-                            "description": "Handläggarens notering 2021-03-27",
-                            "status": "Approved",
-                            "statusHint": "approved",
-                            "updateTime": "2021-03-27",
-                            "actions": [
-                                {
-                                    "label": "E-tjänst 0",
-                                    "url": "https://www.example.com",
-                                    "typeHint": "link"
-                                }
-                            ]
-                        },
-                        {
-                            "description": "Handläggarens notering 2021-04-14",
-                            "status": "Closed",
-                            "statusHint": "closed",
-                            "updateTime": "2021-04-14",
-                            "actions": [
-                                {
-                                    "label": "E-tjänst 0",
-                                    "url": "https://www.example.com",
-                                    "typeHint": "link"
-                                }
-                            ]
-                        },
-                        {
-                            "description": "Handläggarens notering 2021-04-16",
-                            "status": "",
-                            "statusHint": null,
-                            "updateTime": "2021-04-16",
-                            "actions": []
+                            "label": "Gå till faktura",
+                            "url": "https://www.example.com",
+                            "typeHint": "link"
                         }
                     ],
-                    "actions": []
-                } ]', 'gdi-modularity-invoices'),
+                    "payments": [
+                        {
+                            "amount": "55000",
+                            "date": "2021-03-03"
+                        }
+                    ]
+                },
+                {
+                    "invoiceId": "invoices-0002",
+                    "description": "Tomtköavgift - Februari",
+                    "label": "Tomtköavgift - Februari",
+                    "organization": "Stadsledningförvaltningen",
+                    "invoiceDate": "2023-03-01",
+                    "dueDate": "2023-03-30",
+                    "amount": "23000",
+                    "ocrNumber": "123456789101112",
+                    "autoGiro": "1234-1234",
+                    "isPaid": false,
+                    "actions": [
+                        {
+                            "label": "Gå till faktura",
+                            "url": "https://www.example.com",
+                            "typeHint": "link"
+                        }
+                    ],
+                    "payments": []
+                },
+                {
+                    "invoiceId": "invoices-003",
+                    "description": "Tomtköavgift - Januari",
+                    "label": "Tomtköavgift - Januari",
+                    "organization": "Stadsledningförvaltningen",
+                    "invoiceDate": "2023-02-01",
+                    "dueDate": "2023-02-30",
+                    "amount": "23000",
+                    "ocrNumber": "123456789101112",
+                    "autoGiro": "1234-1234",
+                    "isPaid": true,
+                    "actions": [
+                        {
+                            "label": "Gå till faktura",
+                            "url": "https://www.example.com",
+                            "typeHint": "link"
+                        }
+                    ],
+                    "payments": [
+                        {
+                            "amount": "23000",
+                            "date": "2021-02-03"
+                        }
+                    ]
+                }
+            ]', 'gdi-modularity-invoices'),
             'required' => 1,
             'conditional_logic' => array(
                 0 => array(
