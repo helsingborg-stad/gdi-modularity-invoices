@@ -1,1 +1,25 @@
-.gdi-modularity-invoices {}
+.invoice-details-list {
+  max-width: calc(var(--base, 8px) * 45);
+  gap: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.invoice-details-list__item,
+.invoice-details-list__value {
+  font-size: 0.875rem;
+  line-height: 1.625;
+}
+
+.invoice-details-list__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.invoice-details-list__value {
+  font-weight: bold;
+}
+
+.InvoiceView__Header {
+  max-width: 200px;
+}
