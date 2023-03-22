@@ -4,8 +4,8 @@ import { sortyBy } from '../../../util'
 import InvoicesListView from './components/InvoicesListView'
 
 const normalizeInvoices = (invoices: Invoice[]): Invoice[] =>
-  sortyBy(invoices, (c) => c.invoiceDate, 'desc').map((c) => ({
-    ...c,
+  sortyBy(invoices, (c) => c.invoiceDate, 'desc').map((i) => ({
+    ...i,
   }))
 
 const InvoicesView = ({ invoices }: { invoices: Invoice[] }): JSX.Element => {

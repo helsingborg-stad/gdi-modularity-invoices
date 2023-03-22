@@ -5,68 +5,77 @@ import { Invoice } from '../../../../about-me-service/AboutMeContext'
 import InvoiceDetails from './InvoiceDetails'
 
 const InvoiceView = ({
-  data: {
-    label,
-    status,
-    statusHint,
-    actions,
-    organization,
-    dueDate,
-    amount,
-    invoiceDate,
-    ocrNumber,
-    autoGiro,
-  },
+  data: { label, actions, organization, dueDate, amount, invoiceDate, ocrNumber, autoGiro, isPaid },
 }: {
   data: Invoice
 }): JSX.Element => (
-  <Accordion>
+  <Accordion style={{ maxWidth: 'var(--container-width-content, 760px)' }}>
     <AccordionSummary expandIcon={<ExpandMoreIcon />}>
       <Stack
-        sx={{
-          width: { sm: 'calc(100% - 16px)' },
-          alignItems: { sm: 'center' },
-          justifyContent: { sm: 'space-between' },
-        }}
-        spacing={{ xs: 1.5, sm: 2 }}
-        direction={{ xs: 'column', sm: 'row' }}>
-        <Stack direction="column" spacing={0}>
-          <Typography as="h4" gutterBottom>
-            {label}
-          </Typography>
-          <Typography variant="meta" as="span">
-            {organization}
-          </Typography>
-          <div className="u-margin__top--1">
+        sx={{ width: 'calc(100% - 16px)' }}
+        direction={{ xs: 'row', sm: 'row' }}
+        spacing={{ sm: 2 }}>
+        <Stack
+          sx={{ flex: '2 1 auto' }}
+          direction={{ xs: 'column', sm: 'row' }}
+          spacing={{ xs: 1, sm: 2 }}>
+          <Stack sx={{ flex: '1 1 auto' }} className="InvoiceView__Header">
+            <Typography as="h4">{label}</Typography>
             <Typography variant="meta" as="span">
-              Betala senast
+              {organization}
             </Typography>
-            <Typography variant="meta" as="p" gutterTop={false}>
-              <b>{Date.parse(dueDate) ? new Date(dueDate).toLocaleDateString('sv-se') : dueDate}</b>
-            </Typography>
-          </div>
-          <div>
-            <Typography variant="meta" as="span">
-              Summa
-            </Typography>
-            <Typography variant="meta" as="p" gutterTop={false}>
-              <b>{amount / 100}</b>
-            </Typography>
-          </div>
-          <Typography variant="meta" className="u-margin__top--1"></Typography>
+          </Stack>
+          <Stack
+            sx={{ flex: '1 1 auto' }}
+            spacing={{ xs: 1, sm: 2 }}
+            direction={{ xs: 'column', sm: 'row' }}>
+            <Stack sx={{ flex: '1 1 auto' }}>
+              <Typography variant="meta" as="span">
+                Betala senast
+              </Typography>
+              <Typography variant="meta" as="p" gutterTop={false}>
+                <b>
+                  {Date.parse(dueDate) ? new Date(dueDate).toLocaleDateString('sv-se') : dueDate}
+                </b>
+              </Typography>
+            </Stack>
+            <Stack sx={{ flex: '1 1 auto' }}>
+              <Typography variant="meta" as="span">
+                Summa
+              </Typography>
+              <Typography variant="meta" as="p" gutterTop={false}>
+                <b>
+                  {new Intl.NumberFormat('sv-SE', {
+                    style: 'currency',
+                    currency: 'SEK',
+                  }).format(amount / 100)}
+                </b>
+              </Typography>
+            </Stack>
+          </Stack>
         </Stack>
-        <div className="u-margin__left--auto@md u-margin__right--2@md u-margin__y--1@md u-display--flex u-align-items--center">
+
+        <Stack
+          sx={{
+            justifyContent: 'flex-end',
+            alignItems: { xs: 'flex-end', sm: 'center' },
+            flex: '1 1 auto',
+          }}
+          direction="row">
           <Typography className="u-margin__top--0">
-            {status && <Chip color="secondary" label={status} />}
+            <Chip
+              color={isPaid ? 'secondary' : 'default'}
+              label={isPaid ? 'Betald' : 'Ej betald'}
+            />
           </Typography>
-        </div>
+        </Stack>
       </Stack>
     </AccordionSummary>
     <AccordionDetails
       sx={{ borderTop: 1, borderColor: '#0000003d' }}
       className="u-color__bg--lightest u-padding__x--2 u-padding__y--4">
       <div>
-        <InvoiceDetails {...{ dueDate, amount, invoiceDate, ocrNumber, autoGiro }} />
+        <InvoiceDetails {...{ dueDate, amount, invoiceDate, ocrNumber, autoGiro, isPaid }} />
 
         {actions?.length && actions?.length > 0 ? (
           <hr

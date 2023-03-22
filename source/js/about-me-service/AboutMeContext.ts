@@ -2,19 +2,19 @@ import React from 'react'
 
 export interface Invoice {
   invoiceId: string
-  label?: string
-  description?: string
-  status?: string
-  statusHint?: string
-  organization?: string
-  actions?: InvoiceAction[]
+  label: string
+  description: string
+  organization: string
   invoiceDate: string
   dueDate: string
   ocrNumber: string
   autoGiro: string
+  isPaid: boolean
   amount: number
+  actions?: InvoiceAction[]
+  currency?: string
   payments: {
-    amount: string
+    amount: number
     date: string
   }[]
 }
