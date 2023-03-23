@@ -65,12 +65,10 @@ const InvoiceDetails = ({
         Att betala:
       </Typography>
       <Typography as="p" variant="h1" gutterTop={false}>
-        {!isPaid
-          ? new Intl.NumberFormat('sv-SE', {
-              style: 'currency',
-              currency: 'SEK',
-            }).format(amount / 100)
-          : '-'}
+        {new Intl.NumberFormat('sv-SE', {
+          style: 'currency',
+          currency: 'SEK',
+        }).format(amount / 100)}
       </Typography>
     </div>
   </div>
