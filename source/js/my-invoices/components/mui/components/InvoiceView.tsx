@@ -64,7 +64,7 @@ const InvoiceView = ({
           direction="row">
           <Typography className="u-margin__top--0">
             <Chip
-              color={isPaid ? 'secondary' : 'default'}
+              color={isPaid ? 'default' : 'secondary'}
               label={isPaid ? 'Betald' : 'Ej betald'}
             />
           </Typography>
