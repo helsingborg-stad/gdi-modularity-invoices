@@ -11,7 +11,7 @@
             'name' => 'invoices_api_uri',
             'type' => 'url',
             'instructions' => '',
-            'required' => 1,
+            'required' => 0,
             'conditional_logic' => 0,
             'wrapper' => array(
                 'width' => '',
