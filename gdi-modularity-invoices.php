@@ -29,7 +29,7 @@ load_plugin_textdomain(GDI_INVOICES_TEXT_DOMAIN, false, plugin_basename(dirname(
 require_once GDI_INVOICES_PATH . 'Public.php';
 
 // Register the autoloader
-if (file_exists(__DIR__ . 'vendor/autoload.php')) {
+if (file_exists(__DIR__ . '/vendor/autoload.php')) {
     require __DIR__ . '/vendor/autoload.php';
 }
 
