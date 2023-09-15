@@ -58,6 +58,10 @@ class MyInvoices extends \Modularity\Module
 
     public function script()
     {
+        if (!$this->hasModule()) {
+            return;
+        }
+
         wp_enqueue_script(
             'gdi-modularity-my-invoices-js',
             GDI_INVOICES_URL . '/dist/' . CacheBust::name('js/gdi-modularity-invoices.js'),
