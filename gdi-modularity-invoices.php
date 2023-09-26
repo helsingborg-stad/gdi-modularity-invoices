@@ -4,7 +4,7 @@
  * Plugin Name:       GDI Modularity Invoices
  * Plugin URI:        https://github.com/nramstedt/gdi-modularity-invoices
  * Description:       GDI Invoices Module
- * Version:           1.0.0
+ * Version: 1.0.0
  * Author:            Nikolas Ramstedt @ Helsingborg Stad
  * Author URI:        https://github.com/helsingborg-stad
  * License:           MIT
