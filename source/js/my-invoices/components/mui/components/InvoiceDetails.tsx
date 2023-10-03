@@ -60,7 +60,7 @@ const InvoiceDetails = ({
         ]}
       />
     </div>
-    <div className="o-grid-12 o-grid-4@md o-grid-4@lg">
+    <div className="o-grid-12 o-grid-4@md o-grid-4@lg o-grid-4@xl">
       <Typography as="span" variant="meta">
         Att betala:
       </Typography>
