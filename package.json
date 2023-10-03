@@ -1,6 +1,6 @@
 {
     "name": "gdi-modularity-invoices",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "devDependencies": {
         "@babel/core": "^7.18.10",
         "@babel/preset-env": "^7.18.10",
