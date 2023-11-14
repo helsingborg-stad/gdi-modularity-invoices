@@ -15,6 +15,7 @@ class MyInvoices extends \Modularity\Module
         $this->nameSingular = __('My Invoices', GDI_INVOICES_TEXT_DOMAIN);
         $this->namePlural = __('My Invoices', GDI_INVOICES_TEXT_DOMAIN);
         $this->description = __('Modularity Module', GDI_INVOICES_TEXT_DOMAIN);
+        $this->ttl = false;
     }
 
     public function getMockJson(?callable $onError): string
