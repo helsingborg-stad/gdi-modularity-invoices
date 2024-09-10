@@ -1,5 +1,5 @@
 {
-    "name": "gdi-modularity-invoices",
+    "name": "@helsingborg-stad/gdi-modularity-invoices",
     "version": "1.0.5",
     "devDependencies": {
         "@babel/core": "^7.18.10",
@@ -73,6 +73,9 @@
         "lint": "eslint . --ext .ts,.tsx,.jsx",
         "lint:fix": "eslint . --ext .ts,.tsx,.jsx --fix"
     },
+    "files": [
+        "dist/"
+    ],
     "browserslist": [
         "> 1%",
         "not dead"
